@@ -314,6 +314,26 @@ this.state.participantID = participantID;3
       ]
     },
     {
+      "type": "lab.html.Page",
+      "items": [
+        {
+          "type": "text",
+          "title": "今から、ドラマのセリフの一部を聞いていただきます。",
+          "content": "そのセリフについて感じたことについて、答えてください。\n【調査に関してのお願い】\n・音量は適切な大きさに調整してください。\n・聞き取りにくい箇所がある場合は、繰り返し再生してください。\n・周囲に配慮して、音声を流せない場所においてはイヤフォンを装着するなどの対応をお願いいたします。"
+        }
+      ],
+      "scrollTop": true,
+      "submitButtonText": "Continue →",
+      "submitButtonPosition": "right",
+      "files": {},
+      "responses": {
+        "": ""
+      },
+      "parameters": {},
+      "messageHandlers": {},
+      "title": "Page"
+    },
+    {
       "type": "lab.flow.Loop",
       "templateParameters": [
         {
@@ -364,27 +384,27 @@ this.state.participantID = participantID;3
             "type": "likert",
             "items": [
               {
-                "label": "楽しい気持ちになった",
+                "label": "面白いドラマになると思う",
                 "coding": "Q1"
               },
               {
-                "label": "リラックスできた",
+                "label": "威圧感がある",
                 "coding": "Q2"
               },
               {
-                "label": "話題性があると思う",
+                "label": "印象に残るセリフだと思う",
                 "coding": "Q3"
               },
               {
-                "label": "実用的だと思う",
+                "label": "実際にこのような会話が現実社会でもあると思う",
                 "coding": "Q4"
               },
               {
-                "label": "感動する",
+                "label": "セリフを話している人物への印象が良くなった",
                 "coding": "Q5"
               },
               {
-                "label": "作りがいいと思う",
+                "label": "セリフを話している人物への印象が悪くなった",
                 "coding": "Q6"
               },
               {
@@ -468,27 +488,27 @@ this.state.participantID = participantID;3
             "type": "likert",
             "items": [
               {
-                "label": "楽しい気持ちになった",
+                "label": "面白いドラマになると思う",
                 "coding": "Q1"
               },
               {
-                "label": "リラックスできた",
+                "label": "威圧感がある",
                 "coding": "Q2"
               },
               {
-                "label": "話題性があると思う",
+                "label": "印象に残るセリフだと思う",
                 "coding": "Q3"
               },
               {
-                "label": "実用的だと思う",
+                "label": "実際にこのような会話が現実社会でもあると思う",
                 "coding": "Q4"
               },
               {
-                "label": "感動する",
+                "label": "セリフを話している人物への印象が良くなった",
                 "coding": "Q5"
               },
               {
-                "label": "作りがいいと思う",
+                "label": "セリフを話している人物への印象が悪くなった",
                 "coding": "Q6"
               },
               {
@@ -567,27 +587,27 @@ this.state.participantID = participantID;3
             "type": "likert",
             "items": [
               {
-                "label": "楽しい気持ちになった",
+                "label": "面白いドラマになると思う",
                 "coding": "Q1"
               },
               {
-                "label": "リラックスできた",
+                "label": "威圧感がある",
                 "coding": "Q2"
               },
               {
-                "label": "話題性があると思う",
+                "label": "印象に残るセリフだと思う",
                 "coding": "Q3"
               },
               {
-                "label": "実用的だと思う",
+                "label": "実際にこのような会話が現実社会でもあると思う",
                 "coding": "Q4"
               },
               {
-                "label": "感動する",
+                "label": "セリフを話している人物への印象が良くなった",
                 "coding": "Q5"
               },
               {
-                "label": "作りがいいと思う",
+                "label": "セリフを話している人物への印象が悪くなった",
                 "coding": "Q6"
               },
               {
@@ -669,33 +689,8 @@ this.state.participantID = participantID;3
         "": ""
       },
       "parameters": {},
-      "messageHandlers": {
-        "before:prepare": function anonymous(
-) {
-//check Tardy
-//ファイル名をランダムIDにする
-const participantID = this.random.uuid4()
-
-//csvファイルで保存する場合
-const filename = participantID + "_data.csv"
-const data = study.internals.controller.datastore.exportCsv();
-
-fetch("https://pipe.jspsych.org/api/data/", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    Accept: "*/*",
-  },
-  body: JSON.stringify({
-    experimentID: "kdyOhDzbscFN",
-    filename: filename,
-    data: data,
-  }),
-});
-}
-      },
-      "title": "Page",
-      "tardy": true
+      "messageHandlers": {},
+      "title": "Page"
     }
   ]
 })
