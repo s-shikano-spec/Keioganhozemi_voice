@@ -98,7 +98,7 @@ this.state.participantID = participantID;3
       },
       "parameters": {},
       "messageHandlers": {},
-      "title": "Page"
+      "title": "Gender"
     },
     {
       "type": "lab.html.Page",
@@ -130,7 +130,7 @@ this.state.participantID = participantID;3
       },
       "parameters": {},
       "messageHandlers": {},
-      "title": "Page"
+      "title": "Age"
     },
     {
       "title": "Unnamed task",
@@ -214,7 +214,7 @@ this.state.participantID = participantID;3
           },
           "parameters": {},
           "messageHandlers": {},
-          "title": "Page"
+          "title": "Children"
         },
         {
           "type": "lab.html.Page",
@@ -309,7 +309,7 @@ this.state.participantID = participantID;3
           },
           "parameters": {},
           "messageHandlers": {},
-          "title": "Page"
+          "title": "News"
         }
       ]
     },
@@ -319,11 +319,11 @@ this.state.participantID = participantID;3
         {
           "type": "text",
           "title": "今から、ドラマのセリフの一部を聞いていただきます。",
-          "content": "そのセリフについて感じたことについて、答えてください。\n【調査に関してのお願い】\n・音量は適切な大きさに調整してください。\n・聞き取りにくい箇所がある場合は、繰り返し再生してください。\n・周囲に配慮して、音声を流せない場所においてはイヤフォンを装着するなどの対応をお願いいたします。"
+          "content": "そのセリフについて感じたことについて、答えてください。\u003Cbr\u002F\u003E\n【調査に関してのお願い】\u003Cbr\u002F\u003E\n・音量は適切な大きさに調整してください。\u003Cbr\u002F\u003E\n・聞き取りにくい箇所がある場合は、繰り返し再生してください。\u003Cbr\u002F\u003E\n・周囲に配慮して、音声を流せない場所においてはイヤフォンを装着するなどの対応をお願いいたします。\u003Cbr\u002F\u003E"
         }
       ],
       "scrollTop": true,
-      "submitButtonText": "Continue →",
+      "submitButtonText": "次へ",
       "submitButtonPosition": "right",
       "files": {},
       "responses": {
@@ -337,7 +337,7 @@ this.state.participantID = participantID;3
       "type": "lab.flow.Loop",
       "templateParameters": [
         {
-          "audiofile": "gender.wav",
+          "audiofile": "womanhouse.wav",
           "": ""
         },
         {
@@ -354,16 +354,16 @@ this.state.participantID = participantID;3
         "n": "Use all"
       },
       "files": {
-        "gender.wav": "embedded\u002F1d522149e955bdd158af54620ce9aa49e61fb6a2152e156d79371c9887d7ccc1.wav",
-        "womanschool.wav": "embedded\u002F8fb3d71a6d1f4cd59a390b636bcff5dfe51574b23287098f86f96d728856eb01.wav",
-        "womanoffice.wav": "embedded\u002F064314a35a08e64ced8ffa7835d6a018071213f86f1dbc1b5a16dca67d1b8cd9.wav"
+        "womanhouse.wav": "embedded\u002F1d522149e955bdd158af54620ce9aa49e61fb6a2152e156d79371c9887d7ccc1.wav",
+        "womanoffice.wav": "embedded\u002F16cb449dbf13d7302e727db1ab2da76d5aa4cfe15843b96279908249c48225b7.wav",
+        "womanschool.wav": "embedded\u002F553ff69a501a323e581c3df39c28ac1b36a9a174040f3df10a6de06492731302.wav"
       },
       "responses": {
         "": ""
       },
       "parameters": {},
       "messageHandlers": {},
-      "title": "Loop",
+      "title": "Loop_woman",
       "skip": "${this.state.participantID % 3 != 0}",
       "shuffleGroups": [],
       "template": {
@@ -433,7 +433,7 @@ this.state.participantID = participantID;3
         },
         "parameters": {},
         "messageHandlers": {},
-        "title": "Page",
+        "title": "Page_woman",
         "skip": "${this.state.participantID % 3 != 0}"
       }
     },
@@ -441,15 +441,15 @@ this.state.participantID = participantID;3
       "type": "lab.flow.Loop",
       "templateParameters": [
         {
-          "audiofile": "halfhouse.wav",
+          "audiofile": "halfhouse.wav.wav",
           "": ""
         },
         {
-          "audiofile": "halfoffice.wav",
+          "audiofile": "halfoffice.wav.wav",
           "": ""
         },
         {
-          "audiofile": "schoolhalf.wav",
+          "audiofile": "schoolhalf.wav.wav",
           "": ""
         }
       ],
@@ -458,16 +458,16 @@ this.state.participantID = participantID;3
         "n": "Use all"
       },
       "files": {
-        "halfhouse.wav": "embedded\u002F4f4eba5efdf834f888f3b58bf58db41bd9ad6989d56227e748e008897cffc4de.wav",
-        "halfoffice.wav": "embedded\u002F1ef66a4172d12d5ad5d26b7e8d1a9a92cd1def3a11b793b4d4142a593712a5a8.wav",
-        "schoolhalf.wav": "embedded\u002F31016cf2160354ed2bd1f706cd066be6b0ff170ff6d53e15ba852d39d95eda6b.wav"
+        "halfoffice.wav.wav": "embedded\u002F1ef66a4172d12d5ad5d26b7e8d1a9a92cd1def3a11b793b4d4142a593712a5a8.wav",
+        "schoolhalf.wav.wav": "embedded\u002F31016cf2160354ed2bd1f706cd066be6b0ff170ff6d53e15ba852d39d95eda6b.wav",
+        "halfhouse.wav.wav": "embedded\u002F4f4eba5efdf834f888f3b58bf58db41bd9ad6989d56227e748e008897cffc4de.wav"
       },
       "responses": {
         "": ""
       },
       "parameters": {},
       "messageHandlers": {},
-      "title": "Loop",
+      "title": "Loop_half",
       "skip": "${this.state.participantID % 3 != 1}",
       "shuffleGroups": [],
       "template": {
@@ -537,7 +537,7 @@ this.state.participantID = participantID;3
         },
         "parameters": {},
         "messageHandlers": {},
-        "title": "Page",
+        "title": "Page_half",
         "skip": "${this.state.participantID % 3 != 1}"
       }
     },
@@ -571,7 +571,7 @@ this.state.participantID = participantID;3
       },
       "parameters": {},
       "messageHandlers": {},
-      "title": "Loop",
+      "title": "Loop_man",
       "skip": "${this.state.participantID % 3 != 2}",
       "shuffleGroups": [],
       "template": {
@@ -636,7 +636,7 @@ this.state.participantID = participantID;3
         },
         "parameters": {},
         "messageHandlers": {},
-        "title": "Page"
+        "title": "Page_man"
       }
     },
     {
@@ -689,8 +689,34 @@ this.state.participantID = participantID;3
         "": ""
       },
       "parameters": {},
-      "messageHandlers": {},
-      "title": "Page"
+      "messageHandlers": {
+        "before:prepare": function anonymous(
+) {
+ //check Tardy
+//ファイル名をランダムIDにする
+const participantID = this.random.uuid4()
+
+//csvファイルで保存する場合
+const filename = participantID + "_data.csv"
+const data = study.internals.controller.datastore.exportCsv();
+
+fetch("https://pipe.jspsych.org/api/data/", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "*/*",
+  },
+  body: JSON.stringify({
+    experimentID: "kdyOhDzbscFN",
+    filename: filename,
+    data: data,
+  }),
+});
+
+}
+      },
+      "title": "Page",
+      "tardy": true
     }
   ]
 })
