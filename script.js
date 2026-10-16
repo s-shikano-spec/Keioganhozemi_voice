@@ -700,7 +700,7 @@ this.state.participantID = participantID;3
               "coding": "0"
             }
           ],
-          "name": "q2."
+          "name": "Agreement"
         }
       ],
       "scrollTop": true,
