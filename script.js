@@ -167,7 +167,7 @@ this.state.participantID = participantID;3
                   "label": "同性の兄弟姉妹のみいる"
                 }
               ],
-              "name": ""
+              "name": "brother"
             }
           ],
           "scrollTop": true,
@@ -202,7 +202,7 @@ this.state.participantID = participantID;3
                   "label": "回答しない"
                 }
               ],
-              "name": ""
+              "name": "children"
             }
           ],
           "scrollTop": true,
@@ -243,7 +243,7 @@ this.state.participantID = participantID;3
                   "label": "ほとんど見ない"
                 }
               ],
-              "name": ""
+              "name": "Drama"
             }
           ],
           "scrollTop": true,
@@ -297,7 +297,7 @@ this.state.participantID = participantID;3
                 "どちらかというと関心がない",
                 "関心がない"
               ],
-              "name": ""
+              "name": "News"
             }
           ],
           "scrollTop": true,
@@ -421,7 +421,7 @@ this.state.participantID = participantID;3
               "全くあてはまらない"
             ],
             "label": "この音声を聞いて感じたことについて答えてください。",
-            "name": ""
+            "name": "woman"
           }
         ],
         "scrollTop": true,
@@ -525,7 +525,7 @@ this.state.participantID = participantID;3
               "全くあてはまらない"
             ],
             "label": "この音声を聞いて感じたことについて答えてください。",
-            "name": ""
+            "name": "Half"
           }
         ],
         "scrollTop": true,
@@ -624,7 +624,7 @@ this.state.participantID = participantID;3
               "全くあてはまらない"
             ],
             "label": "この音声を聞いて感じたことについて答えてください。",
-            "name": ""
+            "name": "Man"
           }
         ],
         "scrollTop": true,
@@ -668,7 +668,7 @@ this.state.participantID = participantID;3
             }
           ],
           "label": "Q1. 実験中に、この研究の本当の目的（言葉遣いと性別の想起に関する調査であること）にお気づきになりましたか。",
-          "name": "q1."
+          "name": "Aim"
         },
         {
           "required": true,
@@ -707,7 +707,7 @@ this.state.participantID = participantID;3
         {
           "required": false,
           "type": "input",
-          "name": ""
+          "name": "Email"
         }
       ],
       "scrollTop": true,
