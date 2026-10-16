@@ -158,13 +158,16 @@ this.state.participantID = participantID;3
               "type": "radio",
               "options": [
                 {
-                  "label": "一人っ子である"
+                  "label": "一人っ子である",
+                  "coding": "1"
                 },
                 {
-                  "label": "異性の兄弟姉妹がいる"
+                  "label": "異性の兄弟姉妹がいる",
+                  "coding": "2"
                 },
                 {
-                  "label": "同性の兄弟姉妹のみいる"
+                  "label": "同性の兄弟姉妹のみいる",
+                  "coding": "3"
                 }
               ],
               "name": "brother"
@@ -193,13 +196,16 @@ this.state.participantID = participantID;3
               "type": "radio",
               "options": [
                 {
-                  "label": "はい"
+                  "label": "はい",
+                  "coding": "1"
                 },
                 {
-                  "label": "いいえ"
+                  "label": "いいえ",
+                  "coding": "0"
                 },
                 {
-                  "label": "回答しない"
+                  "label": "回答しない",
+                  "coding": "2"
                 }
               ],
               "name": "children"
@@ -228,19 +234,24 @@ this.state.participantID = participantID;3
               "type": "radio",
               "options": [
                 {
-                  "label": "ほぼ毎日"
+                  "label": "ほぼ毎日",
+                  "coding": "5"
                 },
                 {
-                  "label": "週2～3回"
+                  "label": "週2～3回",
+                  "coding": "4"
                 },
                 {
-                  "label": "週1回程度"
+                  "label": "週1回程度",
+                  "coding": "3"
                 },
                 {
-                  "label": "月に数回"
+                  "label": "月に数回",
+                  "coding": "2"
                 },
                 {
-                  "label": "ほとんど見ない"
+                  "label": "ほとんど見ない",
+                  "coding": "1"
                 }
               ],
               "name": "Drama"
@@ -652,19 +663,24 @@ this.state.participantID = participantID;3
           "type": "radio",
           "options": [
             {
-              "label": "全く気づかなかった "
+              "label": "全く気づかなかった ",
+              "coding": "1"
             },
             {
-              "label": "あまり気付かなかった"
+              "label": "あまり気付かなかった",
+              "coding": "2"
             },
             {
-              "label": "どちらともいえない"
+              "label": "どちらともいえない",
+              "coding": "3"
             },
             {
-              "label": "ある程度気づいた"
+              "label": "ある程度気づいた",
+              "coding": "4"
             },
             {
-              "label": "はっきり気付いた"
+              "label": "はっきり気付いた",
+              "coding": "5"
             }
           ],
           "label": "Q1. 実験中に、この研究の本当の目的（言葉遣いと性別の想起に関する調査であること）にお気づきになりましたか。",
@@ -676,10 +692,12 @@ this.state.participantID = participantID;3
           "label": "Q2. 本調査の本当の目的をお知りになった上で、これまでにご回答いただいたデータを分析に使用することに同意いただけますか。",
           "options": [
             {
-              "label": "はい"
+              "label": "はい",
+              "coding": "1"
             },
             {
-              "label": "いいえ"
+              "label": "いいえ",
+              "coding": "0"
             }
           ],
           "name": "q2."
